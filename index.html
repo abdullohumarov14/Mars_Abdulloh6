@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Container va Flexbox</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #d15b53;
+        margin: 0;
+        padding: 0;
+        color: white;
+    }
+
+    h1 {
+        text-align: center;
+        font-size: 3em; /* Sarlavhani kattalashtirdim */
+        margin-top: 20px;
+    }
+
+    h1 span {
+        color: yellow;
+    }
+
+    .links {
+        text-align: center;
+        margin: 20px 0 40px;
+        font-size: 1.3em; /* Havolalarni kattalashtirdim */
+    }
+
+    .links a {
+        color: lightblue;
+        text-decoration: none;
+        margin: 0 25px;
+    }
+
+    .logo {
+        text-align: center;
+        font-size: 2em; /* Logo matnini kattalashtirdim */
+        margin-bottom: 25px;
+    }
+
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 30px;
+        padding: 30px;
+    }
+
+    .card {
+        background-color: #c94c4c;
+        width: 350px; /* Eni kattalashtirildi */
+        border-radius: 10px;
+        overflow: hidden;
+        box-shadow: 0 6px 10px rgba(0,0,0,0.3);
+        text-align: center;
+    }
+
+    .card img {
+        width: 100%;
+        height: 200px; /* Rasmlarni baland qildim */
+ /* Rasmlarni baland qildim */
+        object-fit: cover;
+    }
+
+    .card h3 {
+        background-color: black;
+        color: white;
+        padding: 15px;
+        margin: 0;
+        font-size: 1.5em; /* Sarlavha kattalashtirildi */
+    }
+
+    .card p {
+        padding: 15px;
+        background-color: black;
+        margin: 0;
+        font-size: 1.1em; /* Matn kattalashtirildi */
+        line-height: 1.4em;
+    }
+</style>
+</head>
+<body>
+
+<h1><span>CONTAINER</span> VA FLEXBOX</h1>
+
+<div class="links">
+    <a href="#">Justify-content-space-between</a>
+    <a href="#">Justify-content-space-around</a>
+    <a href="#">Justify-content-space-evenly</a>
+</div>
+
+<div class="logo">Logo</div>
+
+<div class="container">
+    <div class="card">
+        <img src="https://tse2.mm.bing.net/th/id/OIP.Sikmk255jmovc2VQlcQBcwHaEl?rs=1&pid=ImgDetMain&o=7&rm=3" alt="CSS FlexBox">
+        <h3>FlexBox</h3>
+        <p>Flexbox — container ichidagi elementlarni joylashtirish va tarqatishning qulay usuli bo‘lib, ularni oson boshqarish imkonini beradi.</p>
+    </div>
+
+    <div class="card">
+        <img src="https://cdn-images-1.medium.com/max/2000/1*jy2Xh-3Uiv5-uBc0pprKBQ.jpeg" alt="Container">
+        <h3>Container</h3>
+        <p>CSS containerlari yordamida elementlar rang, fon, o‘lcham va boshqa xususiyatlarga ega bo‘lishi va tartib bilan joylashtirilishi mumkin.</p>
+    </div>
+
+    <div class="card">
+        <img src="https://codetheweb.blog/assets/img/posts/css-flexboxes/justify-content-space-around-evenly-comparison.png" alt="Space Evenly">
+        <h3>space-evenly</h3>
+        <p>space-evenly — barcha elementlar orasidagi masofani bir xil qilib tarqatadi, boshidan oxirigacha ham teng masofa qoladi.</p>
+    </div>
+
+    <div class="card">
+        <img src="https://codetheweb.blog/assets/img/posts/css-flexboxes/justify-content-space-around-evenly-comparison.png" alt="Space Between">
+        <h3>space-between</h3>
+        <p>space-between — birinchi element chap tomonga, oxirgisi o‘ng tomonga joylashadi, qolganlari orasida teng masofa bo‘ladi.</p>
+    </div>
+
+    <div class="card">
+        <img src="https://th.bing.com/th/id/R.09b734376abb8d7313b2a4072384e682?rik=yiBt5ORrwX1tHA&riu=http%3a%2f%2ftillitsdone.com%2fcss_property_cover%2fcss-property-align-items.png&ehk=ni2pjclFE1qdWctCQf8Zr12Mxws%2bxvKb56zM8gp2aT4%3d&risl=&pid=ImgRaw&r=0" alt="Align Items">
+        <h3>align-items</h3>
+        <p>align-items — elementlarni vertical yo‘nalishda tekislaydi (tepaga, o‘rtaga yoki pastga).</p>
+    </div>
+
+    <div class="card">
+        <img src="https://th.bing.com/th/id/OIP.M8Q9-0j2yquZgKsAiKZZ_gHaFF?o=7rm=3&rs=1&pid=ImgDetMain&o=7&rm=3" alt="FlexBox">
+        <h3>FlexBox</h3>
+        <p>Flexbox — container ichidagi elementlarni joylashtirish va tarqatishni juda qulay qiladi.</p>
+    </div>
+</div>
+
+</body>
+</html>
